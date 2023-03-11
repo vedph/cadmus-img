@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadmus.Img.Parts", "Cadmus.Img.Parts\Cadmus.Img.Parts.csproj", "{DBDD1874-210A-4466-BC3E-617306D856AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadmus.Seed.Img.Parts", "Cadmus.Seed.Img.Parts\Cadmus.Seed.Img.Parts.csproj", "{74DACF68-0C95-4C19-90B1-B4B8E23F0C09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadmus.Img.Parts.Test", "Cadmus.Img.Parts.Test\Cadmus.Img.Parts.Test.csproj", "{843E1376-945C-4556-9660-1789D4BFB0E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cadmus.Seed.Img.Parts.Test", "Cadmus.Seed.Img.Parts.Test\Cadmus.Seed.Img.Parts.Test.csproj", "{F870E8B0-8908-43CF-B62C-710E70369689}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{677B1630-131B-4496-99F1-70840550A00F}"
+	ProjectSection(SolutionItems) = preProject
+		Pack.bat = Pack.bat
+		Push.bat = Push.bat
+		PushLocal.bat = PushLocal.bat
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBDD1874-210A-4466-BC3E-617306D856AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBDD1874-210A-4466-BC3E-617306D856AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBDD1874-210A-4466-BC3E-617306D856AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBDD1874-210A-4466-BC3E-617306D856AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74DACF68-0C95-4C19-90B1-B4B8E23F0C09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74DACF68-0C95-4C19-90B1-B4B8E23F0C09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74DACF68-0C95-4C19-90B1-B4B8E23F0C09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74DACF68-0C95-4C19-90B1-B4B8E23F0C09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{843E1376-945C-4556-9660-1789D4BFB0E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{843E1376-945C-4556-9660-1789D4BFB0E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{843E1376-945C-4556-9660-1789D4BFB0E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{843E1376-945C-4556-9660-1789D4BFB0E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F870E8B0-8908-43CF-B62C-710E70369689}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F870E8B0-8908-43CF-B62C-710E70369689}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F870E8B0-8908-43CF-B62C-710E70369689}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F870E8B0-8908-43CF-B62C-710E70369689}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {941C6056-1265-4AAB-A700-87E74425B6DE}
+	EndGlobalSection
+EndGlobal

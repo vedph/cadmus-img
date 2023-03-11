@@ -1,0 +1,29 @@
+{
+  "facets": [
+    {
+      "typeId": "it.vedph.img.gallery-image-annotations",
+      "name": "annotations",
+      "description": "Annotations.",
+      "required": true,
+      "colorKey": "98F8F8",
+      "groupKey": "general",
+      "sortKey": "a"
+    }
+  ],
+  "seed": {
+    "options": {
+      "seed": 1,
+      "baseTextPartTypeId": "it.vedph.token-text",
+      "users": [ "zeus" ],
+      "partRoles": [],
+      "fragmentRoles": []
+    },
+    "partSeeders": [
+      {
+        "id": "seed.it.vedph.img.gallery-image-annotations"
+      }
+    ],
+    "fragmentSeeders": [
+    ]
+  }
+}
