@@ -16,3 +16,9 @@ ID: `it.vedph.img.gallery-image-annotations`
   - selector\* (`string`)
   - note (`string`)
   - tags (`string[]`)
+
+## History
+
+### 0.0.2
+
+- 2023-05-12: updated packages.
