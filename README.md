@@ -19,6 +19,9 @@ ID: `it.vedph.img.gallery-image-annotations`
 
 ## History
 
+### 1.0.1
+
+- 2023-06-17: updated packages.
 - 2023-06-02: updated test packages.
 
 ### 1.0.0
