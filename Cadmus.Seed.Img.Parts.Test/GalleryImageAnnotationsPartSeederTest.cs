@@ -33,7 +33,7 @@ public sealed class GalleryImageAnnotationsPartSeederTest
 
         Assert.NotNull(part);
 
-        GalleryImageAnnotationsPart? p = part as GalleryImageAnnotationsPart;
+        W3CGalleryImageAnnotationsPart? p = part as W3CGalleryImageAnnotationsPart;
         Assert.NotNull(p);
 
         TestHelper.AssertPartMetadata(p!);

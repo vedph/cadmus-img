@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace Cadmus.Img.Parts;
 
 /// <summary>
-/// An annotation targeting a <see cref="GalleryImage"/>.
+/// Base class for annotations targeting a <see cref="GalleryImage"/>. Derive
+/// your own annotation from this type by adding new properties to it.
 /// </summary>
 public class GalleryImageAnnotation
 {
@@ -27,16 +27,6 @@ public class GalleryImageAnnotation
     public string Selector { get; set; }
 
     /// <summary>
-    /// Gets or sets an optional set of notes in the annotation's body.
-    /// </summary>
-    public List<string>? Notes { get; set; }
-
-    /// <summary>
-    /// Gets or sets an optional set of tags in the annotation's body.
-    /// </summary>
-    public List<string>? Tags { get; set; }
-
-    /// <summary>
     /// Initializes a new instance of the <see cref="GalleryImageAnnotation"/>
     /// class.
     /// </summary>
@@ -44,8 +34,6 @@ public class GalleryImageAnnotation
     {
         Id = "#" + Guid.NewGuid().ToString();
         Selector = "";
-        Notes = new List<string>();
-        Tags = new List<string>();
     }
 
     /// <summary>

@@ -9,7 +9,7 @@ namespace Cadmus.Img.Parts.Test;
 
 public sealed class GalleryImageAnnotationsPartTest
 {
-    private static GalleryImageAnnotationsPart GetPart()
+    private static W3CGalleryImageAnnotationsPart GetPart()
     {
         GalleryImageAnnotationsPartSeeder seeder = new();
         IItem item = new Item
@@ -21,12 +21,12 @@ public sealed class GalleryImageAnnotationsPartTest
             Title = "Test Item",
             SortKey = ""
         };
-        return (GalleryImageAnnotationsPart)seeder.GetPart(item, null, null)!;
+        return (W3CGalleryImageAnnotationsPart)seeder.GetPart(item, null, null)!;
     }
 
-    private static GalleryImageAnnotationsPart GetEmptyPart()
+    private static W3CGalleryImageAnnotationsPart GetEmptyPart()
     {
-        return new GalleryImageAnnotationsPart
+        return new W3CGalleryImageAnnotationsPart
         {
             ItemId = Guid.NewGuid().ToString(),
             RoleId = "some-role",
@@ -38,11 +38,11 @@ public sealed class GalleryImageAnnotationsPartTest
     [Fact]
     public void Part_Is_Serializable()
     {
-        GalleryImageAnnotationsPart part = GetPart();
+        W3CGalleryImageAnnotationsPart part = GetPart();
 
         string json = TestHelper.SerializePart(part);
-        GalleryImageAnnotationsPart part2 =
-            TestHelper.DeserializePart<GalleryImageAnnotationsPart>(json)!;
+        W3CGalleryImageAnnotationsPart part2 =
+            TestHelper.DeserializePart<W3CGalleryImageAnnotationsPart>(json)!;
 
         Assert.Equal(part.Id, part2.Id);
         Assert.Equal(part.TypeId, part2.TypeId);
@@ -57,7 +57,7 @@ public sealed class GalleryImageAnnotationsPartTest
     [Fact]
     public void GetDataPins_NoEntries_Ok()
     {
-        GalleryImageAnnotationsPart part = GetPart();
+        W3CGalleryImageAnnotationsPart part = GetPart();
         part.Annotations.Clear();
 
         List<DataPin> pins = part.GetDataPins(null).ToList();
@@ -72,11 +72,11 @@ public sealed class GalleryImageAnnotationsPartTest
     [Fact]
     public void GetDataPins_Entries_Ok()
     {
-        GalleryImageAnnotationsPart part = GetEmptyPart();
+        W3CGalleryImageAnnotationsPart part = GetEmptyPart();
 
         for (int n = 1; n <= 3; n++)
         {
-            part.Annotations.Add(new GalleryImageAnnotation
+            part.Annotations.Add(new W3CGalleryImageAnnotation
             {
                 Id = $"#a{n}",
                 Tags = new List<string> { $"eid_img-anno-{n}" },

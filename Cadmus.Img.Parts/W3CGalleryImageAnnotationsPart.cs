@@ -9,23 +9,23 @@ namespace Cadmus.Img.Parts;
 
 /// <summary>
 /// A set of annotations targeting an image picked from a gallery.
-/// <para>Tag: <c>it.vedph.img.gallery-image-annotations</c>.</para>
+/// <para>Tag: <c>it.vedph.img.w3c-gallery-image-annotations</c>.</para>
 /// </summary>
-[Tag("it.vedph.img.gallery-image-annotations")]
-public sealed class GalleryImageAnnotationsPart : PartBase
+[Tag("it.vedph.img.w3c-gallery-image-annotations")]
+public sealed class W3CGalleryImageAnnotationsPart : PartBase
 {
     /// <summary>
     /// Gets or sets the annotations.
     /// </summary>
-    public List<GalleryImageAnnotation> Annotations { get; set; }
+    public List<W3CGalleryImageAnnotation> Annotations { get; set; }
 
     /// <summary>
     /// Initializes a new instance of the <see cref="GalleryImageAnnotationPart"/>
     /// class.
     /// </summary>
-    public GalleryImageAnnotationsPart()
+    public W3CGalleryImageAnnotationsPart()
     {
-        Annotations = new List<GalleryImageAnnotation>();
+        Annotations = new List<W3CGalleryImageAnnotation>();
     }
 
     /// <summary>
@@ -44,7 +44,7 @@ public sealed class GalleryImageAnnotationsPart : PartBase
 
         if (Annotations?.Count > 0)
         {
-            foreach (GalleryImageAnnotation annotation in Annotations)
+            foreach (W3CGalleryImageAnnotation annotation in Annotations)
             {
                 builder.AddValue("id", annotation.Id);
 

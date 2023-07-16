@@ -33,7 +33,7 @@ static internal class TestHelper
             // Cadmus.Core
             typeof(StandardItemSortKeyBuilder).Assembly,
             // Cadmus.Img.Parts
-            typeof(GalleryImageAnnotationsPart).Assembly,
+            typeof(W3CGalleryImageAnnotationsPart).Assembly,
         });
 
         return new HostBuilder()

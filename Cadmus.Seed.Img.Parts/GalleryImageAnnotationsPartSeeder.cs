@@ -21,19 +21,20 @@ public sealed class GalleryImageAnnotationsPartSeeder : PartSeederBase
     private static string BuildUriPrefix(int width, int height) =>
         $"https://loremflickr.com/{width}/{height}?lock=";
 
-    private static List<GalleryImageAnnotation> GetAnnotations(int count, Faker f)
+    private static List<W3CGalleryImageAnnotation> GetAnnotations(
+        int count, Faker f)
     {
         // annotations are built according to the brick's MockGalleryService at
         // https://github.com/vedph/cadmus-bricks-shell/blob/master/projects/myrmidon/cadmus-img-gallery/src/lib/services/mock-gallery.service.ts
 
-        List<GalleryImageAnnotation> annotations = new(count);
+        List<W3CGalleryImageAnnotation> annotations = new(count);
         for (int i = 0; i < count; i++)
         {
             int n = 0;
             if (f.Random.Bool(0.3F)) n = Interlocked.Increment(ref _nr);
 
             string imageId = $"{_nr:00000}";
-            annotations.Add(new GalleryImageAnnotation
+            annotations.Add(new W3CGalleryImageAnnotation
             {
                 Id = "#" + Guid.NewGuid().ToString(),
                 Target = new GalleryImage
@@ -67,7 +68,8 @@ public sealed class GalleryImageAnnotationsPartSeeder : PartSeederBase
     {
         if (item == null) throw new ArgumentNullException(nameof(item));
 
-        GalleryImageAnnotationsPart part = new Faker<GalleryImageAnnotationsPart>()
+        W3CGalleryImageAnnotationsPart part =
+            new Faker<W3CGalleryImageAnnotationsPart>()
            .RuleFor(p => p.Annotations,
                 f => GetAnnotations(f.Random.Number(1, 2), f))
            .Generate();

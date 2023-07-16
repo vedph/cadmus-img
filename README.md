@@ -2,11 +2,11 @@
 
 Core components for Cadmus imaging parts.
 
-## GalleryImageAnnotationsPart
+## W3CGalleryImageAnnotationsPart
 
-ID: `it.vedph.img.gallery-image-annotations`
+ID: `it.vedph.img.w3c-gallery-image-annotations`
 
-- annotations (`GalleryImageAnnotation[]`):
+- annotations (`W3CGalleryImageAnnotation[]`):
   - id\* (`string`)
   - target\* (`GalleryImage`):
     - id\* (`string`)
@@ -18,6 +18,10 @@ ID: `it.vedph.img.gallery-image-annotations`
   - tags (`string[]`)
 
 ## History
+
+### 2.0.0
+
+- 2023-07-14: refactored models so that now the previous annotation and its part are W3C-types, whereas `GalleryImageAnnotation` is just a base class for project-specific concrete types. The part and its tag have been renamed accordingly.
 
 ### 1.0.1
 
