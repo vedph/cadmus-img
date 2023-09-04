@@ -19,6 +19,10 @@ ID: `it.vedph.img.w3c-gallery-image-annotations`
 
 ## History
 
+### 2.0.1
+
+- 2023-09-04: updated packages.
+
 ### 2.0.0
 
 - 2023-07-14: refactored models so that now the previous annotation and its part are W3C-types, whereas `GalleryImageAnnotation` is just a base class for project-specific concrete types. The part and its tag have been renamed accordingly.
