@@ -1,4 +1,4 @@
-# Cadmus Imaging Core
+﻿# Cadmus Imaging Core
 
 Core components for Cadmus imaging parts.
 
@@ -18,6 +18,14 @@ ID: `it.vedph.img.w3c-gallery-image-annotations`
   - tags (`string[]`)
 
 ## History
+
+### 3.0.1
+
+- 2023-11-18: ⚠️ Upgraded to .NET 8.
+
+### 2.0.2
+
+- 2023-11-09: updated packages.
 
 ### 2.0.1
 
