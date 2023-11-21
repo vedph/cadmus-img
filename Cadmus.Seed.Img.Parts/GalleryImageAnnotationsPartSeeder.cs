@@ -66,7 +66,7 @@ public sealed class GalleryImageAnnotationsPartSeeder : PartSeederBase
     public override IPart? GetPart(IItem item, string? roleId,
         PartSeederFactory? factory)
     {
-        if (item == null) throw new ArgumentNullException(nameof(item));
+        ArgumentNullException.ThrowIfNull(item);
 
         W3CGalleryImageAnnotationsPart part =
             new Faker<W3CGalleryImageAnnotationsPart>()

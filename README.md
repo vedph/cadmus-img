@@ -19,6 +19,10 @@ ID: `it.vedph.img.w3c-gallery-image-annotations`
 
 ## History
 
+### 3.0.2
+
+- 2023-11-21: updated packages.
+
 ### 3.0.1
 
 - 2023-11-18: ⚠️ Upgraded to .NET 8.
