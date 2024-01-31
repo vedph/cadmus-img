@@ -19,6 +19,10 @@ ID: `it.vedph.img.w3c-gallery-image-annotations`
 
 ## History
 
+### 3.0.3
+
+- 2024-01-31: updated packages.
+
 ### 3.0.2
 
 - 2023-11-21: updated packages.
