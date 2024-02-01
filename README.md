@@ -2,22 +2,12 @@
 
 Core components for Cadmus imaging parts.
 
-## W3CGalleryImageAnnotationsPart
-
-ID: `it.vedph.img.w3c-gallery-image-annotations`
-
-- annotations (`W3CGalleryImageAnnotation[]`):
-  - id\* (`string`)
-  - target\* (`GalleryImage`):
-    - id\* (`string`)
-    - uri\* (`string`)
-    - title\* (`string`)
-    - description (`string`)
-  - selector\* (`string`)
-  - note (`string`)
-  - tags (`string[]`)
+- parts:
+  - [W3C gallery image annotations](docs/w3c-gallery-image-annotations.md)
 
 ## History
+
+- 2024-02-01: updated documentation.
 
 ### 3.0.3
 
