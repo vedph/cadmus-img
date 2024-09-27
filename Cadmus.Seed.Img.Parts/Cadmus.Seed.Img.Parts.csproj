@@ -6,7 +6,7 @@
 		<Nullable>enable</Nullable>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-		<Version>3.0.3</Version>
+		<Version>3.0.4</Version>
 		<Authors>Daniele Fusi</Authors>
 		<Company>Fusi</Company>
 		<Product>Cadmus</Product>
@@ -15,11 +15,11 @@
 		<NeutralLanguage>en-US</NeutralLanguage>
 		<PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
 		<PackageTags>Cadmus;parts</PackageTags>
-		<FileVersion>3.0.3</FileVersion>
-		<AssemblyVersion>3.0.3</AssemblyVersion>
+		<FileVersion>3.0.4</FileVersion>
+		<AssemblyVersion>3.0.4</AssemblyVersion>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Cadmus.Seed" Version="7.0.2" />
+		<PackageReference Include="Cadmus.Seed" Version="7.0.4" />
 	</ItemGroup>
 	<ItemGroup>
 	  <ProjectReference Include="..\Cadmus.Img.Parts\Cadmus.Img.Parts.csproj" />
