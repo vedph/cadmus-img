@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net8.0</TargetFramework>
+		<TargetFramework>net9.0</TargetFramework>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-		<Version>3.0.4</Version>
+		<Version>4.0.0</Version>
 		<Authors>Daniele Fusi</Authors>
 		<Company>Fusi</Company>
 		<Product>Cadmus</Product>
@@ -15,12 +15,12 @@
 		<NeutralLanguage>en-US</NeutralLanguage>
 		<PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
 		<PackageTags>Cadmus;parts</PackageTags>
-		<FileVersion>3.0.4</FileVersion>
-		<AssemblyVersion>3.0.4</AssemblyVersion>
+		<FileVersion>4.0.0</FileVersion>
+		<AssemblyVersion>4.0.0</AssemblyVersion>
 	</PropertyGroup>
 	<ItemGroup>
-		<PackageReference Include="Cadmus.Core" Version="7.0.4" />
-		<PackageReference Include="Cadmus.Refs.Bricks" Version="5.0.2" />
+		<PackageReference Include="Cadmus.Core" Version="8.0.0" />
+		<PackageReference Include="Cadmus.Refs.Bricks" Version="6.0.0" />
 	</ItemGroup>
 
 </Project>
