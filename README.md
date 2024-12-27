@@ -7,6 +7,8 @@ Core components for Cadmus imaging parts.
 
 ## History
 
+- 2024-12-27: updated test packages.
+
 ### 4.0.1
 
 - 2024-11-30: updated packages.
