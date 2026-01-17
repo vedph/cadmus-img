@@ -7,6 +7,10 @@ Core components for Cadmus imaging parts.
 
 ## History
 
+### 5.0.1
+
+- 2026-01-17: updated packages.
+
 ### 5.0.0
 
 - 2025-11-23: ⚠️ upgraded to NET 10.
